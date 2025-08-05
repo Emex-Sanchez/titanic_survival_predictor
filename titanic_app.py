@@ -10,7 +10,7 @@ st.markdown("""
 Welcome to the Titanic Survival Predictor!  
 This app uses a **Machine Learning model (Logistic Regression)** trained on the Titanic dataset to predict whether a passenger would have survived the Titanic disaster.
 
- 💡 How it works:
+### 💡 How it works:
 - You provide passenger details (class, sex, age, fare, etc.)
 - The model calculates the probability of survival
 - Based on the prediction, the app tells you if the person **survived (1)** or **did not survive (0)**
