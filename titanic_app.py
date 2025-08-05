@@ -6,6 +6,18 @@ model = joblib.load('titanic_model.pkl')  # Load your trained model
 
 st.title("🚢 Titanic Survival Predictor")
 
+st.markdown("""
+Welcome to the Titanic Survival Predictor!  
+This app uses a **Machine Learning model (Logistic Regression)** trained on the Titanic dataset to predict whether a passenger would have survived the Titanic disaster.
+
+ 💡 How it works:
+- You provide passenger details (class, sex, age, fare, etc.)
+- The model calculates the probability of survival
+- Based on the prediction, the app tells you if the person **survived (1)** or **did not survive (0)**
+
+> This project was built using `Python`, `pandas`, `scikit-learn`, and `Streamlit`.
+""")
+
 # Input fields
 pclass = st.selectbox("Passenger Class (1 = 1st, 2 = 2nd, 3 = 3rd)", [1, 2, 3])
 sex = st.selectbox("Sex", ["male", "female"])
